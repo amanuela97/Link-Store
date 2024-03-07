@@ -1,0 +1,103 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 100%;
+  padding: 0.2em;
+  background-color: black;
+}
+
+form {
+  display: flex;
+  gap: 0.5em;
+  padding: 0.2em;
+  border: 1px solid hsl(0deg 0% 50%);
+  background-color: transparent;
+}
+
+input {
+  display: block;
+  width: 100%;
+  height: 1.5rem;
+  margin-top: 2px;
+}
+
+.url {
+  flex-grow: 3;
+  min-width: 0; /* Ensure the input can shrink if necessary */
+  flex-basis: 50%;
+}
+
+.name {
+  flex-grow: 1;
+  min-width: 0; /* Ensure the input can shrink if necessary */
+  flex-basis: 30%;
+}
+
+button:hover {
+  cursor: pointer;
+  background: #b6b1b1;
+  transition: 0.4s;
+}
+
+button.add {
+  flex-grow: 1;
+  min-width: 0; /* Ensure the button can shrink if necessary */
+  flex-basis: 20%;
+}
+
+span.message {
+  font-size: 1.4em;
+  text-align: center;
+  padding: 1em;
+  color: white;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  width: 100%;
+  height: 200px;
+  padding: 0.2em;
+  background: transition;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.url_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: grey;
+  color: white;
+  border: 1px solid hsl(0deg 0% 50%);
+  width: 100%;
+}
+
+.url_item > span {
+  font-size: 1.4em;
+  margin-left: 0.2em;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.4em;
+}
+
+.buttons > button {
+  background: #b6b1b1;
+}
+
+.buttons > button:hover {
+  cursor: pointer;
+  background: #5f5e5e;
+  transition: 0.4s;
+}
+
+img {
+  width: 25px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="popup.css" />
+  <body>
+    <form>
+      <input
+        type="text"
+        value=""
+        class="url"
+        required
+        placeholder="Paste a link"
+      />
+      <input
+        type="text"
+        value=""
+        required
+        class="name"
+        maxlength="20"
+        placeholder="Text"
+      />
+      <button class="add">add</button>
+    </form>
+    <span class="message">No links have been added</span>
+    <ul class="url_list"></ul>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
